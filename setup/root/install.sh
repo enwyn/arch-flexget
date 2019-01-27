@@ -7,10 +7,10 @@ set -e
 pacman_packages="python2 python2-pip"
 
 # install pre-reqs
-pacman -Sy --needed $pacman_packages --noconfirm
-pip2 install --upgrade setuptools
-pip2 install flexget
-pip2 install transmissionrpc
+pacman -Syu --needed $pacman_packages --noconfirm
+pip3 install --upgrade setuptools
+pip3 install flexget
+pip3 install deluge-client rtorrent-python irc_bot rarfile subliminal
 
 # call aor script (arch official repo)
 # source /root/aur.sh
