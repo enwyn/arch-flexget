@@ -4,7 +4,7 @@
 set -e
 
 # define pacman packages
-pacman_packages="python2 python2-pip"
+pacman_packages="python python-pip"
 
 # install pre-reqs
 pacman -Syu --needed $pacman_packages --noconfirm
